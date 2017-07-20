@@ -55,7 +55,6 @@ ul{
   border:1px solid #000;
   min-height: 400px;
   max-height: 400px;
-  overflow-y: scroll;
   overflow:scroll; 
 }
 
