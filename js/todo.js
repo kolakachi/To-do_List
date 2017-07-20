@@ -65,8 +65,8 @@ function updateList() {
 function checkForDuplicates( listitem ) {
     
     var match = false;
-    ListItems.forEach(function( t ) {
-        if( t.name === listitem )
+    ListItems.forEach(function( item ) {
+        if( item.name === listitem )
 		match = true;
 	});
 
@@ -74,9 +74,9 @@ function checkForDuplicates( listitem ) {
 }
 
 //delete item from todo list
-function deleteThisItem(e) {
+function deleteThisItem(event) {
     
-    ListItems.splice( e.target.id, 1 );
+    ListItems.splice( event.target.id, 1 );
     localStorage.setItem("ListItems", JSON.stringify( ListItems ));
     updateList();
 }
