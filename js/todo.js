@@ -1,5 +1,5 @@
 /*
- * simple todo list application written in pure java script.
+ * simple todo list application written in pure Javascript.
 
 */
 
