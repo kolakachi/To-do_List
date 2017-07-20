@@ -78,7 +78,7 @@ function deleteThisItem(e) {
     
     ListItems.splice( e.target.id, 1 );
     localStorage.setItem("ListItems", JSON.stringify( ListItems ));
-    location.reload();
+    updateList();
 }
 
 //delete  all items from todo list
@@ -88,7 +88,7 @@ function deleteAll() {
 	ul.innerHTML = '';
 	ListItems = [];
 	localStorage.setItem("ListItems", JSON.stringify( ListItems ));
-        location.reload();
+        updateList();
     }
 }
 
